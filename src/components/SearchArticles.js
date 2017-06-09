@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Posts from './Posts'
-import {Col, Row} from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 
 const SearchArticles = ({
     isEmpty,
@@ -15,7 +15,7 @@ const SearchArticles = ({
 }) => (
     <div>
       <Row className="show-grid">
-        <Col xs={6} md={6} style={{textAlign: 'right'}}>
+        <div style={{textAlign: 'right', paddingRight: 2 + 'em'}}>
             <p>
                 {lastUpdated && <span>
                     Last updated at {new Date(lastUpdated).toLocaleTimeString()}. {' '}
@@ -26,10 +26,9 @@ const SearchArticles = ({
                 </a>
 }
             </p>
-        </Col>
-        <Col xs={6} md={6}></Col>
+        </div>
         </Row>
-        <Col xs={6} md={6}>
+        <div >
 
             {isEmpty
                 ? (isFetching
@@ -43,7 +42,7 @@ const SearchArticles = ({
                     <Posts posts={posts} onClickPost={onClickPost}/>
                 </div>
 }
-        </Col>
+        </div>
     </div>
 )
 

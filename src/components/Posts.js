@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import PostRow from './PostRow.js'
+import { Row } from 'react-bootstrap'
 
 const Posts = ({posts, onClickPost}) => (
-  <div>
+  <Row>
     {posts.map((post, i) =>
       <PostRow
         key={i}
@@ -13,7 +14,7 @@ const Posts = ({posts, onClickPost}) => (
         date={post.webPublicationDate}
         onClickPost={onClickPost}/>
     )}
-  </div>  
+  </Row>
 )
 
 Posts.propTypes = {
