@@ -14,6 +14,7 @@ const SearchArticles = ({
     onClickPost
 }) => (
     <div>
+      {!isEmpty ?
       <Row className="show-grid">
         <div style={{textAlign: 'right', paddingRight: 2 + 'em'}}>
             <p>
@@ -28,12 +29,14 @@ const SearchArticles = ({
             </p>
         </div>
         </Row>
+        :<Row className="show-grid"></Row>
+        }
         <div >
 
             {isEmpty
                 ? (isFetching
                     ? <h2></h2>
-                    : <h2>Empty.</h2>)
+                    : <h2>Sorry, no news for this topic. Maybe try another search?</h2>)
                 : <div style={{
                     opacity: isFetching
                         ? 0.5
