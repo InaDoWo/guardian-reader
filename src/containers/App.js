@@ -39,7 +39,6 @@ class App extends Component {
         e.preventDefault()
         this.props.dispatch(selectArticle(item))
     }
-
     handleRefreshClick = e => {
         e.preventDefault()
 
