@@ -1,6 +1,6 @@
 # The Guardian News Reader
 
-Simply type in a keyword and read available news articles from the guardian. You can play around with the app here: [The Guardian News Reader](https://the-guardian-news-reader.herokuapp.com/?)
+Simply type in a keyword and read available news articles of The Guardian. You can play around with the app here: [The Guardian News Reader](https://the-guardian-news-reader.herokuapp.com/?)
 
 This app was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides a simple way to start React projects with no build configuration needed.
 
